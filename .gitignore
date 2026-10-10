@@ -1,0 +1,8 @@
+.env
+__pycache__/
+*.pyc
+.venv/
+venv/
+storage/qdrant/*
+!storage/qdrant/.gitkeep
+.DS_Store

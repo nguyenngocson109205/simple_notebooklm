@@ -1,0 +1,16 @@
+langchain
+langchain-community
+langchain-text-splitters
+langchain-huggingface
+langchain-qdrant
+qdrant-client
+pypdf
+pydantic
+pydantic-settings
+jinja2
+fastapi
+uvicorn
+streamlit
+typer
+python-dotenv
+sentence-transformers
