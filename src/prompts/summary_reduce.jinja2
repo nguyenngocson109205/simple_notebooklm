@@ -1,0 +1,33 @@
+Bạn đang tổng hợp các bản tóm tắt nhỏ
+thành một bản tóm tắt cuối cùng.
+
+Các bản tóm tắt:
+
+{% for item in partials %}
+Phần {{ loop.index }}:
+
+Summary:
+{{ item.summary }}
+
+Key points:
+{% for point in item.key_points %}
+- {{ point }}
+{% endfor %}
+
+{% endfor %}
+
+Hãy tổng hợp các phần trên thành một bản tóm tắt thống nhất.
+Loại bỏ thông tin trùng lặp.
+
+Chỉ trả về JSON hợp lệ:
+
+{
+  "summary": "Bản tóm tắt cuối cùng",
+  "key_points": [
+    "Ý chính 1",
+    "Ý chính 2"
+  ]
+}
+
+Không thêm markdown.
+Không thêm nội dung ngoài JSON.

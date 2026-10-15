@@ -11,16 +11,17 @@ class ChunkMetadata(BaseModel):
 
 class RetrievedChunk(BaseModel):
     text: str
-    score: int
+    score: float 
     metadata: ChunkMetadata
 
-class Citation:
+class Citation(BaseModel):
     source_index: int
     source_marker: str
     filename: str
     page: int
     section: str | None = None
     chunk_id: str | None = None
+
 class RagAnswer(BaseModel):
     question: str
     answer: str
